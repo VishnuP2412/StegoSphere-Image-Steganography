@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <title>StegoSphere - Image Steganography</title>
+        <link rel="stylesheet" type="text/css" href="/Projects/StegoSphere - Image Steganography/static/style.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    </head>
+    <body>
+        <div class="Header">
+            <p>
+                StegoSphere<br>Image Steganography
+            </p>
+        </div>
+        <div class="container">
+            <div class="Tool" id="Encode">
+                <p>Encode</p>
+                 <form action="/encode" method="POST" enctype="multipart/form-data">
+                    <div class="Tool" id="EncodeInput">
+                        <h3>Input</h3>
+                        <input type="file" id="EncodeInputFile" name="Image" accept="image/*">
+                        <input type="text" id="EncodeInputText" name="Text" placeholder="Enter text to encode">
+                    </div>
+                    <div class="Tool" id="EncodeOutput">
+                        <h3>Output</h3>
+                        <button type="submit" id="EncodeOutputButton">Encode</button>
+                    </div>
+                </form>
+                {% if encoded_file_url %}
+                    <div class="Tool" id="EncodedImage">
+                        <h3>Encoded Image</h3>
+                        <a href="{{ encoded_file_url }}" download>Download Encoded Image</a>
+                    </div>
+                {% endif %}
+            </div>
+            <div class="Tool" id="Decode">
+                <p>Decode</p>
+                <form action="/decode" method="POST" enctype="multipart/form-data">
+                    <div class="Tool" id="DecodeInput">
+                        <h3>Input</h3>
+                        <input type="file" id="DecodeInputFile" name="EncodedImage" accept="image/*">
+                    </div>
+                    <div class="Tool" id="DecodeOutput">
+                        <h3>Output</h3>
+                        <button type="submit" id="EncodeOutputButton">Decode</button>
+                    </div>
+                </form>
+                  {% if decoded_text %}
+                    <div class="Tool" id="DecodedText">
+                        <h3>Decoded Text</h3>
+                        <textarea readonly>{{ decoded_text }}</textarea>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </body>
+</html>

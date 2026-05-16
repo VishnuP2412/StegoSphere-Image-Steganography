@@ -1,0 +1,216 @@
+*{
+  background-color: #0D1117;
+  box-sizing: border-box;
+}
+
+.Header p{
+  background-color: #161B22;
+  color: #F0F6FC;
+  font-size: 40px;
+  text-align: center;
+  text-shadow: #F0F6FC 0px 0px 10px;
+  font-family:'Doto';
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 5px 5px 20px #F0F6FC;
+}
+
+.container{
+  display:flex;
+}
+
+#Encode {
+  width: 50%;
+  background-color: #161B22;
+  color: #F0F6FC;
+  font-size: 20px;
+  text-align: center;
+  /* text-shadow: #F0F6FC 0px 0px 10px; */
+  font-family:'Doto';
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+  /* box-shadow: 5px 5px 20px #F0F6FC; */
+  padding-bottom: 50px;
+}
+
+#Encode:hover {
+  width: 50%;
+  background-color: #161B22;
+  color: #F0F6FC;
+  font-size: 20px;
+  text-align: center;
+  text-shadow: #F0F6FC 0px 0px 10px;
+  font-family:'Doto';
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 5px 5px 20px #F0F6FC;
+  padding-bottom: 50px;
+}
+
+#Encode p{
+  font-size: 40px;
+  font-weight: bold;
+
+}
+
+#Encode *{
+  background-color: #161B22;
+}
+
+#Encode input{
+  margin: 10px;
+}
+
+#Encode input::placeholder{
+  background-color: #161B22;
+  color: #F0F6FC;
+  text-align: center;
+  font-family:'Doto';
+  font-weight: bold;
+}
+
+#Decode {
+  width: 50%;
+  background-color: #161B22;
+  color: #F0F6FC;
+  font-size: 20px;
+  text-align: center;
+  /* text-shadow: #F0F6FC 0px 0px 10px; */
+  font-family:'Doto';
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+  /* box-shadow: 5px 5px 20px #F0F6FC; */
+  padding-bottom: 50px;
+}
+
+#Decode:hover {
+  width: 50%;
+  background-color: #161B22;
+  color: #F0F6FC;
+  font-size: 20px;
+  text-align: center;
+  text-shadow: #F0F6FC 0px 0px 10px;
+  font-family:'Doto';
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 5px 5px 20px #F0F6FC;
+  padding-bottom: 50px;
+}
+
+#Decode p{
+  font-size: 40px;
+  font-weight: bold;
+
+}
+
+#Decode *{
+  background-color: #161B22;
+}
+
+#Decode input{
+  background-color: #161B22;
+  color: #F0F6FC;
+  text-align: center;
+  font-family:'Doto';
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+#Decode input[type="file"]{
+  background-color: #161B22;
+  color: #F0F6FC;
+  text-align: center;
+  font-family:'Doto';
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+#Decode input::placeholder{
+  background-color: #161B22;
+  color: #F0F6FC;
+  text-align: center;
+  font-family:'Doto';
+  font-weight: bold;
+}
+
+#EncodeInput,
+#EncodeOutput,
+#DecodeInput,
+#DecodeOutput {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Adjust this to control spacing */
+}
+
+#EncodeOutput button,
+#DecodeOutput button{
+  background-color: #161B22;
+  color: #F0F6FC;
+  font-size: 20px;
+  text-align: center;
+  align-self: center;
+  /* text-shadow: #F0F6FC 0px 0px 10px; */
+  font-family:'Doto';
+  font-weight: bold;
+  border-radius: 10px;
+  padding:10px;
+  /* box-shadow: 5px 5px 20px #F0F6FC; */
+}
+
+#EncodeOutput button:hover,
+#DecodeOutput button:hover{
+  background-color: #161B22;
+  color: #F0F6FC;
+  font-size: 20px;
+  text-align: center;
+  align-self: center;
+  text-shadow: #F0F6FC 0px 0px 10px;
+  font-family:'Doto';
+  font-weight: bold;
+  border-radius: 10px;
+  padding:10px;
+  box-shadow: 5px 5px 20px #F0F6FC;
+}
+
+#EncodedImage{
+  font-size:20px;
+}
+
+#EncodedImage img{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+#EncodedImage a{
+  text-decoration: none;
+  color:#F0F6FC;
+}
+
+#DecodedText{
+  font-size:20px;
+}
+
+#DecodedText textarea{
+  font-size:20px;
+  color:#F0F6FC;
+  text-align: center;
+  font-family:'Doto';
+  font-weight: bold;
+}
+
+#EncodeInputText[type="text"]{
+  color:#F0F6FC;
+  font-family:'Doto';
+  
+}
